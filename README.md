@@ -1,4 +1,4 @@
-# animal-detect
+# Animal classification and detection-ViT
 IFT 3710/6759 H23 - Projets (avancés) en apprentissage automatique
 
 This project proposes a set of general ideas and data sets all around the topic of animal classification and detection from photos. Images of animals are interesting because they constitute a valuable test bed and benchmark for computer vision models and, at the same time, improving the performance of such models on the task of animal classification and detection has the potential of facilitating the work of life scientists.
