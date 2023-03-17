@@ -12,8 +12,12 @@ transform = transforms.Compose([
     transforms.Normalize((0.5,), (0.5,))
 ])
 
+print('Loading data...')
+
 data = datasets.ImageFolder('/Users/kironrothschild/Downloads/Animals_with_Attributes2/JPEGImages', transform=transform)
 train_data, val_data = train_test_split(data, test_size=0.2)
+
+print('Data loaded.')
 
 # Load and prepare the ViT model
 model = ViT(
@@ -27,6 +31,8 @@ model = ViT(
     dropout = 0.1,
     emb_dropout = 0.1
 )
+
+print('Model loaded.')
 
 # Train the ViT model
 criterion = nn.CrossEntropyLoss()
