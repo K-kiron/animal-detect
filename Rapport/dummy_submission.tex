@@ -1,0 +1,135 @@
+\documentclass[11pt]{article}
+
+% This file will be kept up-to-date at the following GitHub repository:
+%
+% https://github.com/alexhernandezgarcia/mais-latex
+%
+% Please file any issues/bug reports, etc. you may have at:
+%
+% https://github.com/alexhernandezgarcia/mais-latex/issues
+
+\usepackage{microtype} % microtypography
+\usepackage{booktabs}  % tables
+\usepackage{url}  % urls
+
+% AMS math
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+% Dummy text
+\usepackage[english]{babel}
+\usepackage{blindtext}
+
+% With no package options, the submission will be anonymized, the supplemental
+% material will be suppressed, and line numbers will be added to the manuscript.
+%
+% To hide the supplementary material (e.g., for the first submission deadline),
+% use the [hidesupplement] option:
+%
+% \usepackage[hidesupplement]{mais}
+%
+% To compile a non-anonymized camera-ready version, add the [final] option (for
+% the main track) e.g.,
+%
+% \usepackage[final]{mais}
+%
+% or
+%
+% \usepackage[final, hidesupplement]{mais}
+
+\usepackage[final]{mais}
+
+% You may use any reference style as long as you are consistent throughout the
+% document. As a default we suggest author--year citations; for bibtex and
+% natbib you may use:
+
+\usepackage{natbib}
+\bibliographystyle{apalike}
+
+% and for biber and biblatex you may use:
+
+% \usepackage[%
+%   backend=biber,
+%   style=authoryear-comp,
+%   sortcites=true,
+%   natbib=true,
+%   giveninits=true,
+%   maxcitenames=2,
+%   doi=false,
+%   url=true,
+%   isbn=false,
+%   dashed=false
+% ]{biblatex}
+% \addbibresource{...}
+
+\title{A dummy submission for MAIS 2022}
+
+% The syntax for adding an author is
+%
+% \author[i]{\nameemail{author name}{author email}}
+%
+% where i is an affiliation counter. Authors may have
+% multiple affiliations; e.g.:
+%
+% \author[1,2]{\nameemail{Anonymous}{anonymous@example.com}}
+
+\author[1]{\nameemail{Ada Lovelace}{ada@lovelace.com}}
+\author[2,3]{\nameemail{Maria Mitchell}{maria@mitchell.com}}
+\author[4]{\nameemail{Katherine Johnson}{katherine@johnson.com}}
+
+% if you need to force a linebreak in the author list, prepend an \author entry
+% with \\:
+
+% \author[3]{\\\nameemail{Author 5}{email5@example.com}}
+
+% Specify corresponding affiliations after authors, referring to counter used in
+% \author:
+
+\affil[1]{Ada's Institution}
+\affil[2]{Maria's Institution 1}
+\affil[3]{Maria's Institution 2}
+\affil[4]{Katherine's Institution}
+
+% define PDF metadata, please fill in to aid in accessibility of the resulting PDF
+\hypersetup{%
+  pdfauthor={Lovelace, Mitchell and Johnson}, % will be reset to "Anonymous" unless the "final" package option is given
+  pdftitle={A dummy submission for MAIS 2022},
+  pdfsubject={dummyness},
+  pdfkeywords={mais}
+}
+
+\begin{document}
+
+\maketitle
+
+\blindtext. The text above is meaningless, but more interesting stuff can be found in \citet{mitchell2003venus}.
+
+\blindtext[2]
+
+\blinditemize
+
+\blindtext
+
+\blindmathfalse
+
+\blindtext[2]
+
+% content will be automatically hidden during submission
+\begin{acknowledgements}
+  \blindtext
+\end{acknowledgements}
+
+% print bibliography -- for bibtex / natbib, use:
+
+\bibliography{references}
+\bibliographystyle{mais}
+
+% and for biber / biblatex, use:
+
+% \printbibliography
+
+% supplemental material -- everything hereafter will be suppressed during
+% submission time if the hidesupplement option is provided!
+\appendix
+
+\end{document}
