@@ -4,14 +4,11 @@ IFT 3710/6759 H23 - Projets (avancés) en apprentissage automatique
 This project proposes a set of general ideas and data sets all around the topic of animal classification and detection from photos. Images of animals are interesting because they constitute a valuable test bed and benchmark for computer vision models and, at the same time, improving the performance of such models on the task of animal classification and detection has the potential of facilitating the work of life scientists.
 
 Using data:
-Caltech Camera Traps (CCT): images taken by motion- or heat-triggered cameras used by biologists to monitor animal populations and behaviour. 
+Animals with Attributes 2 (AwA2) est un ensemble de données destiné à l'évaluation comparative des algorithmes d'apprentissage par transfert, tels que la classification par base d'attributs et l'apprentissage à partir de zéro. AwA2 est un remplacement direct de l'ensemble de données original Animals with Attributes (AwA), avec plus d'images publiées pour chaque catégorie. L'AwA2 fournit également une matrice catégorie-attributs, qui contient un vecteur d'attributs de 85 dim (par exemple, couleur, rayures, fourrure, taille et habitat) pour chaque catégorie.
 
-We aim to take advantage of this unique opportunity to learn about and experiment with Vision Transformers. We hope to achieve good classification results on this dataset and better understand how to efficiently approach this type of dataset and classification problem through Vision Transformers and other analogous algorithms.
+-37322 images
 
-More specifically, our current research question (subject to change) is : 
-Since Vision Transformers were designed for very large datasets, are they still able to achieve good Classification results on a smaller dataset?
+-50 catégories d'animaux
 
-To answer this question, we will train ViT and four other models (LeNet, EfficientNet, Alexnet, Resnet), and allow each model a maximum training time budget of 6 hours. The VIT results will then be compared to those of the three other models (ideas to enforce the 6 hours budget might be subsampling the dataset for example). 
-This goal is in line with our limited Computing resources and will allow us to test ViT in a different context than usual (smaller dataset and training time). We will then aim to answer related sub-questions such as : 
-On what metrics did ViT do better than the other architectures and vice-versa?
-What is shared between the images that were Classified accurately and what is common between those that were not?
+
+This project aimed at evaluating the performance of Vision Transformer (ViT) models on a smaller dataset and with a limited training time. ViT models have gained a reputation for their remarkable performance on various computer vision tasks, but they require significant computational resources to train. The primary goal of this project was to investigate whether ViT models can still deliver competitive results under more constrained conditions.
