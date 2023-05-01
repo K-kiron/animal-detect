@@ -3,12 +3,18 @@
 ## Environment: 
 ### Google colab Notebook ,python 3.10.11, libraries are listed in files.
 
-# important package
+# important packages
 ## Pytorch
-
+```
+pip3 install torch torchvision torchaudio
+```
 ## EfficientNet Model
 ```
-pip install efficientnet-pytorch
+pip3 install efficientnet-pytorch
+```
+## tqdm progress bar
+```
+pip3 install tqdm
 ```
 
 ### All documents are equipped with W&B tracking. If you do not want to use W&B, you can comment out the 'wandb' related code.
