@@ -3,11 +3,13 @@
 ## Environment: 
 ### Google colab Notebook ,python 3.10.11, libraries are listed in files.
 
-## Models we are using for a final version:
+# important package
+## Pytorch
 
-SimpleViT_GPU57 -> Non pre-trained ViT model with Data Augmentation
-
-Pre-trained ViT -> Pre-trained ViT model with Data Augmentation
+## EfficientNet Model
+```
+pip install efficientnet-pytorch
+```
 
 ### All documents are equipped with W&B tracking. If you do not want to use W&B, you can comment out the 'wandb' related code.
 
