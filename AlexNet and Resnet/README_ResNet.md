@@ -4,7 +4,7 @@
 ### Google colab Notebook ,python 3.10.11, libraries are listed in files.
 
 # important packages
-## Pytorch, NumPy, Pandas, Scikit-learn, seaborn, Matplotlib
+## Torch 2.0.0+cu118, torchvision 0.15.1+cu118, NumPy 1.22.4, Pandas 1.5.3, Scikit-learn 1.2.2, seaborn 0.12.2, Matplotlib 3.7.1
 
 ### All documents are equipped with W&B tracking. If you do not want to use W&B, you can comment out the 'wandb' related code.
 
